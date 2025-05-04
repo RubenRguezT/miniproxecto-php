@@ -1,12 +1,12 @@
--- CREATE DATABASE IF NOT EXISTS Ruben_Rguez_BD CHARACTER SET utf8 COLLATE utf8_general_ci;
--- SET default_storage_engine = InnoDB;
--- USE Ruben_Rguez_BD;
+CREATE DATABASE IF NOT EXISTS Ruben_Rguez_BD CHARACTER SET utf8 COLLATE utf8_general_ci;
+SET default_storage_engine = InnoDB;
+USE Ruben_Rguez_BD;
 -- Drop user 'librouser'@'localhost';
 -- Drop database Ruben_Rguez_BD;
 -- Drop table Libros;
 
--- CREATE USER 'librouser'@'localhost' IDENTIFIED BY 'passworduser';
--- GRANT ALL PRIVILEGES ON Ruben_Rguez_BD.* TO 'librouser'@'localhost';
+CREATE USER 'librouser'@'localhost' IDENTIFIED BY 'passworduser';
+GRANT ALL PRIVILEGES ON Ruben_Rguez_BD.* TO 'librouser'@'localhost';
 
 
 CREATE TABLE libros (
