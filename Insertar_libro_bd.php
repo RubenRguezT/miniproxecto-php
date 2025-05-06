@@ -23,7 +23,7 @@ $consulta = insertar_libro();
             <h3 class="text-white fw-bold">Bienvenido a Libreria Ruben</h3>
           </span>
         </div>
-        <a class="navbar-brand" href="Inicio.php"><strong>Inicio</strong></a>
+        <a class="navbar-brand" href="Index.php"><strong>Inicio</strong></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -60,7 +60,6 @@ $consulta = insertar_libro();
       <table class="table table-striped">
         <thead>
           <tr>
-            <th scope="col">ID</th>
             <th scope="col">ISBN</th>
             <th scope="col">Titulo</th>
             <th scope="col">Autor</th>
@@ -77,7 +76,6 @@ $consulta = insertar_libro();
 
             for ($i = 0; $fila = mysqli_fetch_array($consulta, MYSQLI_ASSOC); $i++) {
 
-              echo "<td>{$fila['id']}</td>";
               echo "<td>{$fila['isbn']}</td>";
               echo "<td>{$fila['titulo']}</td>";
               echo "<td>{$fila['autor']}</td>";

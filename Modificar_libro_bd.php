@@ -23,7 +23,7 @@ $resultado = modificar_libro();
           <h3 class="text-white fw-bold">Bienvenido a Libreria Ruben</h3>
         </span>
       </div>
-      <a class="navbar-brand" href="Inicio.php"><strong>Inicio</strong></a>
+      <a class="navbar-brand" href="Index.php"><strong>Inicio</strong></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

@@ -16,7 +16,7 @@
         <div class="w-75 mx-auto">
           <span class="navbar-text"><h3 class="text-white fw-bold">Bienvenido a Libreria Ruben</h3></span>
         </div>
-      <a class="navbar-brand" href="Inicio.php"><strong>Inicio</strong></a>
+      <a class="navbar-brand" href="Index.php"><strong>Inicio</strong></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -53,8 +53,10 @@
   
     <form action = "Eliminar_libro_bd.php" method="POST">
       <div class="mb-3">
-        <label for="id" class="form-label">Introduce el ID del libro que deseas eliminar:</label>
-        <input type="number" class="form-control" name="id" id="id" min="1" max="100">
+        <div class="mb-3">
+          <label for="isbn" class="form-label">Introduce el ISBN del libro que deseas eliminar:</label>
+          <input type="text" class="form-control" name="isbn" id="isbn">
+        </div>
       </div>
       </br>
 

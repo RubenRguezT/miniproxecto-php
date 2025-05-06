@@ -251,11 +251,11 @@ function eliminar_libro()
 
     // obtenemos los datos
 
-    $id = $_POST["id"];
+    $isbn = $_POST["isbn"];
 
     // Realizamos la eliminacion del libro de nuestra tabla
 
-    $eliminar = "DELETE FROM libros WHERE id = $id";
+    $eliminar = "DELETE FROM libros WHERE isbn = $isbn";
 
     mysqli_query($conexion, $eliminar);
 
@@ -287,10 +287,10 @@ function modificar_libro()
 
     // obtenemos los datos para poder modificarlos
 
-    $id = $_POST["id"];
+    $isbn = $_POST["isbn"];
 
 
-    $consulta = "SELECT * FROM libros WHERE id = $id";
+    $consulta = "SELECT * FROM libros WHERE isbn = $isbn";
 
 
     // Seleccionamos los datos 
